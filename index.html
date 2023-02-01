@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🎉🎊231018🎊🎉</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--제목-->
+        <h1 style="text-align: center; color: white;">[Birthday Project]</h1>
+        
+        <!--사진-->
+        <div style="text-align: center; border:rgb(138, 0, 0) 5mm solid;">
+            <div style="border: rgb(232, 115, 107) 3mm solid;">
+                <img src="F1.gif">
+            </div>
+        </div>
+
+        <!--press me버튼-->
+
+        <!-- a1 / a2 / a3 / a4 -->
+        
+        <div style="padding: 5%;"><a class="a1" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            Press Me!
+        </a></div>
+        
+        <div style="text-align: center;"><span class="a2" style="border: springgreen 5px solid;"><a  href="https://www.youtube.com/watch?v=3GwjfUFyY6M" target="_blank">
+            Press Me!
+        </a></span></div>
+        
+        <div style="margin-left: 65px; margin-top: 65px;"><a class="a3" href="https://youtu.be/Lq_3o9rqn1g" target="_blank">
+            Press Me!
+        </a></div>
+        
+        <div style="text-align: right; margin-top: 40px; padding: 5%;"><a class="a4" href="https://i.pinimg.com/originals/b0/d4/4d/b0d44ddb5d3a24b807d01cadbb20d424.jpg" target="_blank">
+            Press Me!
+        </a></div>
+
+        <!--해피벌스데이-->
+        <div style="text-align: center;">
+            <button class="button" style="font-size: 30px; color: black;" type="button" class="btm_image" id="img_btn" onclick="alert('HAPPY BIRTHDAY~')">
+                <div style="text-align: center;">
+                    HAPPY BIRTHDAY!!!!!!
+                </div>
+                <img  src="F2.gif">
+            </button>
+        </div>
+
+        <!--따봉-->
+        <div style="padding: 5%;">
+            <div style="margin-top: 50px; text-align: right;">
+                <input style="font-size: 50px;" type='button'onclick='count("plus")'value='🎉'/>
+            </div>
+            <div style=" text-align: right;">
+                <span style="border: #ffffff solid 1px; font-size: 30px; color: #ffffff;">Celebrate!</span>
+                <span style="border: #ffffff solid 1px; color: #ffffff; font-size: 40px; text-align: center;" id='result'>0</span>
+            </div>
+        </div>
+
+        <!-- 노래버튼 -->
+        <div style="margin-top: 20px; text-align: center;">
+            <button style="font-size: 45px; width: 25%; height: 25%;" onclick="document.getElementById('player').play()">PLAY MUSIC!!</button>
+            <button onclick="document.getElementById('player').pause()">Pause</button>
+            <audio id="player" src="take.mp3"></audio>
+            <h6>sorce:https://youtu.be/djV11Xbc914</h6>
+        </div>
+        
+        <!--출처-->
+        
+        
+        <!--사진+텍스트-->
+        <div class="jb-wrap">
+			<div class="jb-image">
+                <img src="nc.gif" alt="">
+            </div>
+			<div class="jb-text">
+				<a style="font-size: 30px; text-decoration: none; color: red; font-style: italic;" class="cel" href="https://url.kr/3519ic" target="_blank">CELEBRATION!!!!!!!!!!!!!!!!!</a>
+			</div>
+		</div>
+
+        <!--유튭-->
+        <div class="player">
+        <iframe 
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/kHdUIUWGrm8" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+        </iframe>
+        </div>
+        
+        <!--체크박스-->
+        <div style="text-align: center; margin-top: 60px;">
+            <strong style="top: 50%; font-size: 30px; font-weight: bold; color: greenyellow;">Is today your birthday?</strong>
+            <input type="checkbox" id="c1">
+            <label for="c1"></label>
+        </div>
+
+        <!--변경-->
+        <br><br><br><br>
+        <h5>I dedicate this website to An.</h5>        
+
+        <script>
+            <!--따봉-->
+            function count(type)  {
+            const resultElement = document.getElementById('result');
+
+            let number = resultElement.innerText;
+            
+            if(type === 'plus') 
+            {
+            number = parseInt(number) + 1;
+            }
+
+            resultElement.innerText = number;
+            }
+
+            document.getElementById("c1").addEventListener("change", function() {
+                if(this.checked) {
+                    setTimeout(function() {
+                    window.location.href = "procedure.html";
+                    }, 750);
+                }
+            });
+        </script>
+    </body>
+</html>

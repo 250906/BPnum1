@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        
+      </style>
+    </head>
+
+    <body style="background-color: black;">
+        <form name="join">
+<div style="border: violet 12px solid;">
+  <div style="border: blueviolet 16px solid;">
+    <div style="border: blue 20px solid;">
+      <div style="border: green 24px solid;">
+        <div style="border: yellow 28px solid;">
+          <div style="border: orange 32px solid;"> 
+            <div style="padding-top: 20%; padding-bottom: 20%; border: 36px red solid; text-align: center;">
+              <div style="font-size: 25px; color: white;">
+                👇CLICK!!👇
+              </div>
+              <div>
+                <button onclick="alert('취향확인ㅋ')"><img src="PoNy.png"></button></div>
+              <div>
+              <input style="font-size: 30px;" type="password" placeholder="비밀번호" id="dwp">
+              <input style="font-size: 25px;" type="button" onclick="navigateToSite()" value="입장하기">
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </form>
+
+        <script>
+            function navigateToSite() {
+                var DWP = document.getElementById("dwp").value;
+                var hash = btoa(DWP);
+           
+            if (hash === "MTIzNA==") {
+                window.location.href = "https://c11.kr/1a7c0";
+            } else {
+                alert("틀림ㅋ");
+                    }
+            }
+        </script>
+    </body>
+</html>
